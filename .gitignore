@@ -1,0 +1,4 @@
+.env
+.venv
+data/facility_name_gaps.csv
+data/facility_name_update_verification.csv
