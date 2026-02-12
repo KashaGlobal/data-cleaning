@@ -351,8 +351,8 @@ def main() -> None:
 
     print(f"rows_updated: {rows_updated}")
     print(f"unresolved_mappings: {stats['unresolved_mappings']}")
-    print(f"source_multi_match_mappings: {stats['source_multi_match_mappings']}")
-    print(f"target_multi_match_mappings: {stats['target_multi_match_mappings']}")
+    print(f"INFO: source_name_multiple_rows: {stats['source_multi_match_mappings']}")
+    print(f"INFO: target_name_multiple_rows: {stats['target_multi_match_mappings']}")
     unresolved_examples = stats.get("unresolved_examples", [])
     if unresolved_examples:
         print("unresolved_examples:")
