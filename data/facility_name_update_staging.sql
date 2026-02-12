@@ -6,6 +6,9 @@
 
 START TRANSACTION;
 
+USE hiv_pds_db_staging;
+SELECT DATABASE(), @@hostname;
+
 UPDATE facilities
 SET government_facility_code = '13461'
 WHERE BINARY facility_name = BINARY 'Abidha Health Centre' AND COALESCE(government_facility_code, '') <> '13461';
